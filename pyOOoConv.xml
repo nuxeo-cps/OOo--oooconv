@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE config [
+<!ELEMENT config
+    (oooserver+, rpc-server, xvfb)>
+
+<!ELEMENT oooserver    EMPTY>
+<!ATTLIST oooserver
+    name         CDATA   #REQUIRED
+    host         CDATA   #REQUIRED
+    port         CDATA   #REQUIRED
+    path         CDATA   #REQUIRED
+    userEnv      CDATA   #REQUIRED
+    maxRuns      CDATA   #REQUIRED>
+    
+<!ELEMENT rpc-server    EMPTY>
+<!ATTLIST rpc-server
+    port         CDATA   #REQUIRED
+    statfile     CDATA   #REQUIRED
+    logfile      CDATA   #REQUIRED>
+    
+<!ELEMENT xvfb    EMPTY>
+<!ATTLIST xvfb
+    command         CDATA   #REQUIRED
+    firstXserver    CDATA   #REQUIRED
+    Xauth           CDATA   #REQUIRED>
+]>
+
+<config>
+
+  <xvfb
+    command = "Xvfb"
+    firstXserver = "50"
+    Xauth= "/home/lgodard/Indesko/dvlpt/Monum/pyOOoConv/Xauth.cfg"
+  />  
+
+  <rpc-server
+    port="11117"
+    statfile = "/home/lgodard/Indesko/dvlpt/Monum/pyOOoConv/stats.txt"
+    logfile = "/home/lgodard/Indesko/dvlpt/Monum/pyOOoConv/logs.txt"
+    /> 
+      
+  <oooserver
+    name="Instance #1"
+    host="localhost"
+    port="2002"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user1"
+    maxRuns="1000"
+    />
+  <oooserver
+    name="Instance #2"
+    host="localhost"
+    port="2003"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user2"
+    maxRuns="500"
+    />
+
+  <oooserver
+    name="Instance #3"
+    host="localhost"
+    port="2004"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user3"
+    maxRuns="750"
+    />    
+<!--
+
+  <oooserver
+    name="Instance #4"
+    host="localhost"
+    port="2005"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user4"
+    maxRuns="1000"
+    />
+ 
+  <oooserver
+    name="Instance #5"
+    host="localhost"
+    port="2006"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user5"
+    maxRuns="500"
+    />
+
+  <oooserver
+    name="Instance #6"
+    host="localhost"
+    port="2007"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user6"
+    maxRuns="750"
+    />        
+
+  <oooserver
+    name="Instance #7"
+    host="localhost"
+    port="2008"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user7"
+    maxRuns="1000"
+    />
+ 
+  <oooserver
+    name="Instance #8"
+    host="localhost"
+    port="2009"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user8"
+    maxRuns="500"
+    />
+
+  <oooserver
+    name="Instance #9"
+    host="localhost"
+    port="2010"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user9"
+    maxRuns="750"
+    />        
+          
+  <oooserver
+    name="Instance #10"
+    host="localhost"
+    port="2011"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user10"
+    maxRuns="1000"
+    />
+ 
+  <oooserver
+    name="Instance #11"
+    host="localhost"
+    port="2012"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user11"
+    maxRuns="500"
+    />
+
+  <oooserver
+    name="Instance #12"
+    host="localhost"
+    port="2013"
+    path="/home/lgodard/OpenOffice.org1.1.5_test/program/soffice"   
+    userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user12"
+    maxRuns="750"
+    />        
+-->  
+    
+</config>

@@ -1,0 +1,21 @@
+[Environment]
+InstallationMode=INSTALL_NORMAL
+InstallationType=STANDARD
+DestinationPath=~/openoffice115
+StartProcedure=MyStartProc
+Migration=Yes
+
+[Java]
+JavaSupport=preinstalled_or_none
+
+[Procedures]
+Sub MyStartProc
+    SetUserCompanyName("None")
+        HideSetup
+End Sub
+
+[Windows_Desktop_Integration]
+Register4MSWord=False
+Register4MSExcel=False
+Register4MSPowerPoint=False
+RegisterAsDefaultHTMLEditor=False
