@@ -233,7 +233,11 @@ class Queue:
                 
         if os.path.isfile(parameters['source']):
             
-            parameters['convertedList'] = engine.export(parameters)     
+            parameters['convertedList'] = engine.export(
+                parameters['source'],
+                parameters['dest'],
+                parameters['format'],
+                )
                            
             parameters['sourceSize'] = os.path.getsize(parameters['source'])
             parameters['end'] = str(time.time())    
@@ -335,5 +339,3 @@ class Queue:
         
 if __name__ == '__main__':  
     queue = Queue()
-
-        
