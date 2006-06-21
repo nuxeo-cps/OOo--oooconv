@@ -236,9 +236,9 @@ class OOoConv:
 
 def testMe():
     
-    theSourceFile="/home/lgodard/dvlpt/Manex/Manex/Manex/Manex BRIT AIR partie A/A.00.00.doc"
+    theSourceFile="/home/lgodard/sourcefile.doc"
     #please note, NO extension
-    theTargetFile="/home/lgodard/dvlpt/Manex/Manex/Manex/sxw/Manex BRIT AIR partie A/A.00.00" 
+    theTargetFile="/home/lgodard/targetfile" 
     theFormat = "PDF"
     sendTo = "lgodard@indesko.com"
     

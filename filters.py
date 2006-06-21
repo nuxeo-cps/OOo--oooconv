@@ -40,7 +40,7 @@ Filters ={
                                 'Extension': 'tex',
                                 'isGraphical': False,
                                 'zipMe': True},   
-                        'TXT': {'FilterName': 'Latex File',
+                        'TXT': {'FilterName': 'Text',
                                 'Extension': 'txt',
                                 'isGraphical': False,
                                 'zipMe': False},         
