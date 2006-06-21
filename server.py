@@ -248,7 +248,7 @@ class OOoConvAsyncServer(xmlrpc.XMLRPC):
 if __name__ == '__main__':
 
     #read params
-    fileName = "/home/lgodard/Indesko/dvlpt/messager/Messager2/MSGOOoEngine/pyOOoConv/pyOOoConv.xml"
+    fileName = "./pyOOoConv.xml"
     myParams = XmlConfig(fileName)
     listenPort = myParams.getConfigValueByName('rpc-server', 'port')
     
