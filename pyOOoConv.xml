@@ -47,6 +47,7 @@
     userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user1"
     maxRuns="1000"
     />
+  <!--
   <oooserver
     name="Instance #2"
     host="localhost"
@@ -64,7 +65,7 @@
     userEnv="-env:UserInstallation=file:///home/lgodard/OOoPool/user3"
     maxRuns="750"
     />    
-<!--
+
 
   <oooserver
     name="Instance #4"
