@@ -1,4 +1,4 @@
-OOoConv 
+pyOOoConv 
 
 author : Laurent Godard <lgodard@indesko.com> 
 version : 0.1
