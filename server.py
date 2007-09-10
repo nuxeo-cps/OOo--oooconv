@@ -248,11 +248,9 @@ class OOoConvAsyncServer(xmlrpc.XMLRPC):
 if __name__ == '__main__':
 
     #read params
-<<<<<<< .mine
+
     fileName = "pyOOoConv.xml"
-=======
-    fileName = "./pyOOoConv.xml"
->>>>>>> .r49138
+
     myParams = XmlConfig(fileName)
     listenPort = myParams.getConfigValueByName('rpc-server', 'port')
     
